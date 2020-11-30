@@ -1,0 +1,25 @@
+﻿<Window x:Class="OpenALTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenALTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Grid.Column="0">
+            <Label Name="lbVersion" Content="version"/>
+            <Label Name="lbVendor" Content="vendor"/>
+            <Label Name="lbRenderer" Content="renderer"/>
+            <Button Name="btPlay" Content="Play" Width="30" Click="btPlay_Click"/>
+            <Button Name="btStop" Content="Stop" Width="30" Click="btStop_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Label Name="lbState" Content="waiting"/>
+        </StackPanel>
+    </Grid>
+</Window>
